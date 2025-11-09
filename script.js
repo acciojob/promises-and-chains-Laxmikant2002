@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         new Promise((resolve, reject) => {
             setTimeout(() => {
-                if (age >= 18) {
+                if (age > 18) {
                     resolve(`Welcome, ${name}. You can vote.`);
                 } else {
-                    reject(`Sorry, ${name}. You aren't old enough.`);
+                    reject(`Oh sorry ${name}. You aren't old enough.`);
                 }
             }, 4000);
         })
